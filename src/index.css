@@ -1,0 +1,140 @@
+*{
+    margin: 3px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-color: black;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+.logotop{
+    width: 15%;
+    float: left;
+}
+.logotop img{
+    width: 50px;
+    height: 50px;
+}
+.brand{
+    width: 60%;
+    float: left;
+    height: fit-content;
+    font-weight: 50px;
+    font-size: 50px;
+    color: aliceblue;
+}
+.social_icon{
+    background-color: wheat;
+    width: 15%;
+    float: left;
+}
+.topmenu ul{
+    clear: both;
+    gap: 50px;
+    list-style-type: none;
+}
+li{
+    color: burlywood;
+    display: inline;
+}
+.row1{
+    float: left;
+    width: 30%;
+    background-color: aqua;
+    border-radius: 7px;
+    border: 1px solid aqua;
+}
+.row2{
+    float: left;
+    width: 30%;
+    background-color: aqua;
+    border-radius: 7px;
+    border: 1px solid aqua;
+}
+.row3{
+    float: left;
+    width: 30%;
+    background-color: aqua;
+    border-radius: 7px;
+    border: 1px solid aqua;
+    margin-bottom: 80px;
+}
+footer{
+    clear: both;
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+} 
+.foot1 img{
+    width: 50px;
+    height: 50px;
+}
+.foot1{
+    width: 29%;
+    float: left;
+    background-color: red;
+}
+.foot2{
+    width: 29%;
+    margin-left: 20px;
+    float: left;
+    background-color: grey;
+    color: white;
+}
+.foot3{
+    width: 29%;
+    float: left;
+    margin-left: 20px;  
+    background-color: blue;
+    color: white; 
+}
+a:link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aqua;
+}
+a:hover{
+    background-color: aliceblue;
+}
+.row1:hover{
+    transform: scale(1.1) ;
+}
+.row2:hover{
+    transform: scale(1.1) ;
+}
+.row3:hover{
+    transform: scale(1.1) ;
+}
+.rotate{
+    display: flex;
+    justify-content: center;
+}
+@keyframes rotation{
+    0% {background-color: aqua; right:100px; top:0px;}
+    25% {background-color: brown; left:0px; top:0px;}
+}
+@keyframes rotati{
+    0% {background-color: aqua; right:0px; top:0%}
+    25% {background-color: brown; left:200px; top:0%}
+    50% {background-color: rgba(5, 132, 155, 0.678); left:200px; top:0%}
+    100% {background-color: rgba(138, 175, 4, 0.5); left:200px; top:0%}
+}
+.rotate button {
+    background-color: aqua;
+}
+.rotate button[type=button]{
+    color: black;
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.rotate button[type=menu]{
+    color: black;
+    position: relative;
+    animation-name: rotati;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
