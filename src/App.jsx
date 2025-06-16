@@ -6,10 +6,16 @@ import Scaffold from "./components/Scaffold"
 import DashboadSkeleton from "./components/DashboadSkeleton"
 import DashboardMessages from "./pages/DashboardMessages"
 import DashboardHome from "./pages/DashboardHome"
+import { AppContext } from "./context/Appcontext"
+
 
 
 export default function App() {
+
+
   return (
+    
+  <AppContext >
     <Scaffold>
         <Routes>
       <Route path="/" element={<Home />} />
@@ -21,6 +27,6 @@ export default function App() {
       <Route path="/*" element={<NotFound />} />
      </Routes>
     </Scaffold>
-
+  </AppContext>
   )
 }

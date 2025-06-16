@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// import { useAppContext } from "../context/Appcontext";
 
 export default function Header({ image }){
     return (<>
@@ -18,7 +19,7 @@ export default function Header({ image }){
             <ul>
                 <li><Link to="/">Home</Link></li> 
                 <li><Link to="/dashboard">dashboard</Link></li>
-                <li><a href="#">Services</a></li>
+                <li onClick={()=>{}}>Services</li>
                 <li><a href="#">Our team</a></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
